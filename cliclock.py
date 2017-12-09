@@ -6,8 +6,15 @@ import webbrowser
 
 
 class stopWatcher:
+    '''
+    Methods required by the stopwatch.
+    '''
 
     def trackTimes():
+        '''
+        Track time as of user's inputs.
+        '''
+
         print('Press ENTER to begin. Afterwards, press ENTER to "click" the \
                 stopwatch.  Press Ctrl-C to quit.')
         print('Started.')
@@ -28,20 +35,35 @@ class stopWatcher:
 
 
 class timeHandler:
+    '''
+    Methods riquired by the timer.
+    '''
 
     def __init__(self):
+        '''
+        Self variables of the class.
+        '''
+
         self.timeNow = datetime.datetime.now()
         self.timeSpan = int(parse_args("dictionary")["minutes"])
         self.endTime = None
         self.minutes = self.timeSpan * 60
 
     def nap(self):
+        '''
+        Responsible for sleep and after sleep behavior.
+        '''
+
         print('See you in {} minutes'.format(self.timeSpan))
         time.sleep(self.minutes)
         print('Done.')
         webbrowser.open('https://duckduckgo.com', new=2, autoraise=True)
 
     def timeAction(self):
+        '''
+        Organises how the timer works.
+        '''
+
         nap = timeHandler()
         nap = nap.nap()
         threadObj = threading.Thread(target=nap)
@@ -50,6 +72,10 @@ class timeHandler:
 
 
 def parse_args(value):
+    '''
+    All argparser's  and subparsers actions and configs.
+    '''
+
     parser = argparse.ArgumentParser(description="Clock and CLI utilities")
 
     subparsers = parser.add_subparsers(help='Types of actions.')
@@ -69,6 +95,9 @@ def parse_args(value):
 
 
 def main():
+    '''
+    Control the program's behaviour after user's arguments.
+    '''
 
     args = parse_args("functions")
     argsDict = parse_args("dictionary")
