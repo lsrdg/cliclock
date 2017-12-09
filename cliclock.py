@@ -1,6 +1,5 @@
 import argparse
 import datetime
-import sys
 import threading
 import time
 import webbrowser
