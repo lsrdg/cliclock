@@ -29,9 +29,8 @@ Call the script passing the desired command.
 
 | Command | Usage | Description |
 |---------|-------|-------------|
-|`stopw`  | `$ python cliclock.py stopw` | Runs a stopwatch. |
-|`timer`  | `$ python cliclock.py timer 2` | Run a timer that will expire in two
-minutes. |
+|`stopw`  | `$ python cliclock.py stopw` | Run a stopwatch. |
+|`timer`  | `$ python cliclock.py timer 2` | Run a timer that will expire in two minutes. |
 
 ### Stopwatch
 
@@ -46,7 +45,7 @@ version, it will open your default browser and - in a new tab (if possible) -
 
 ## Bugs, issues and contributions
 
-..., feedback and criticisms are welcome. Shoot! (:
+..., feedback and criticisms are welcome. Just shoot! (:
 
 ## License
 ### The Unlicense
