@@ -51,16 +51,15 @@ version, it will open your default browser and - in a new tab (if possible) -
 
 - [X] Add Readme
 - [X] v0.0.1
+- [ ] Add tests
 - [ ] Refactoring
 - [ ] v0.0.2
-- [ ] Add tests
-- [ ] v0.0.3
 - [ ] Add config file support
-- [ ] v0.0.4
+- [ ] v0.0.3
 - [ ] Add different actions to when timer stops
+- [ ] v0.0.4
+- [ ] Stopw custom loops
 - [ ] v0.0.5
-- [ ] Stopw loops
-- [ ] v0.0.6
 
 ## License
 ### The Unlicense
