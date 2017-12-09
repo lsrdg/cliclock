@@ -20,7 +20,7 @@ class stopWatcher:
                 input()
                 lapTime = round(time.time() - lastTime, 2)
                 totalTime = round(time.time() - startTime, 2)
-                print('Lap #{}: {} ({})'.format(lapNum, totalTime, lapTime))
+                print('Lap #{}: {} ({})'.format(lapNum, str(totalTime).center(20), lapTime))
                 lapNum += 1
                 lastTime = time.time()
         except KeyboardInterrupt:
